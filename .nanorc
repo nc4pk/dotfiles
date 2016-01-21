@@ -1,0 +1,6 @@
+unset backup
+set morespace
+set mouse
+set smarthome
+set tabsize 4
+set tabstospaces
