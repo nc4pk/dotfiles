@@ -20,9 +20,9 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# If set, the pattern "**" used in a pathname expansion context will
+# enable bash 4.0's globstar pattern; "**" used in a pathname expansion will
 # match all files and zero or more directories and subdirectories.
-#shopt -s globstar
+shopt -s globstar
 
 # set default umask to something more secure
 umask 027
@@ -40,9 +40,7 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
-# uncomment for a colored prompt, if the terminal has the capability; turned
-# off by default to not distract the user: the focus in a terminal window
-# should be on the output of commands, not on the prompt
+# uncomment for a colored prompt, if the terminal has the capability
 #force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
@@ -96,4 +94,3 @@ fi
 # alias definitions
 alias dh='df -h'
 alias ll='ls -lAh --group-directories-first'
-
